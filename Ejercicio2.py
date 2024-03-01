@@ -81,7 +81,7 @@ with open("C:\\Users\\fredy\\Downloads\\NDA.pdf", "rb") as pdf:
     pdfHa_B = int.from_bytes(
         hashlib.sha256(pdfBy_B).digest(), "big")
 
-print(f"Hash de Bob: {pdfHa_B}\n")
+print(f"Hash B: {pdfHa_B}\n")
 
 pdf_hash_verif_bob = pow(sAC, e, nAC)
 
